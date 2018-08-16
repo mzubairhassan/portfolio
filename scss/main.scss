@@ -123,6 +123,30 @@ main {
     }
 }
 
+// contact me
+.boxex {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-evenly;
+    margin-top: 1rem;
+    div {
+        padding: 1.5rem 2.5rem;
+        border: 3px #fff solid;
+        margin-bottom: 3rem;
+        font-size: 2rem;
+        @include easeOut;
+        &:hover {
+            padding: 0.5rem 1.5rem;
+            background: $secondry-color;
+            color: set-text-color($secondry-color);
+            span {
+                color: set-text-color($secondry-color);
+            }
+        }
+    }
+}
+
 .btn-dark {
     @extend .btn;
     background: darken($primary-color, 50);
